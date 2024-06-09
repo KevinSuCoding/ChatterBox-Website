@@ -89,10 +89,10 @@ header{
 	max-width: 1200px;
 	margin: 0 auto;
 	display: grid;	
-	box-shadow: 0px 5px 6px -6px rgba(95, 115, 128, .44);
+	box-shadow: 0px 5	px 6px -6px rgba(95, 115, 128, .44);
 }
 .hero-text-wrapper {
-	padding-left: 10rem;
+	padding-left: 12rem;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
@@ -136,7 +136,7 @@ header{
 	display: flex;
 	position: absolute;
 	top: 135px;
-	left: 50%;
+	left: 52%;
 	z-index: 0;
 }
 .hero-image { 
@@ -144,6 +144,38 @@ header{
 	width: auto;
 }
 
+svg.heart-pulse{
+	color: red;
+	display: flex;
+	position: absolute;
+	top: 135px;
+	left: 70%;
+	z-index: 0;
+}
+svg.globe{
+	color: red;
+	display: flex;
+	position: absolute;
+	top: 235px;
+	left: 70%;
+	z-index: 0;
+}
+svg.laptop{
+	color: red;
+	display: flex;
+	position: absolute;
+	top: 335px;
+	left: 70%;
+	z-index: 0;
+}
+.text-wrapper { 
+	color: gray;
+	display: flex;
+	position: absolute;
+	top: 160px;
+	left: 58%;
+	z-index: 0;
+}
 /* RESPONSIVE DESIGN */
 @media(max-width:992px){
 	.navbar .links,
