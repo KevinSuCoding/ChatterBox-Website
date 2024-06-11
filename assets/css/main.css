@@ -16,7 +16,7 @@
 }
 
 body{
-	height: 300vh;
+	height: 150vh;
 	background-color: white;
 }
 li{
@@ -45,7 +45,10 @@ header{
 	margin: 0 auto;
 	display: flex;
 	align-items:center;
-	justify-content:space-between ;
+	justify-content:flex-end ;
+}
+.navbar .logo{
+	margin-right: auto;
 }
 
 .navbar .logo a{
@@ -81,15 +84,16 @@ header{
 /* HERO BANNER */
 .hero {
 	height: 500px;
+
 	
 }
 .hero-container { 
 	width: 100%;
-	height: 500px;
+	height: 520px;
 	max-width: 1200px;
 	margin: 0 auto;
 	display: grid;	
-	box-shadow: 0px 5	px 6px -6px rgba(95, 115, 128, .44);
+	/* box-shadow: 0px 5px 6px -6px rgba(95, 115, 128, .44); */
 }
 .hero-text-wrapper {
 	padding-left: 12rem;
@@ -165,7 +169,7 @@ svg.laptop{
 	display: flex;
 	position: absolute;
 	top: 335px;
-	left: 70%;
+	left: 40%;
 	z-index: 0;
 }
 .text-wrapper { 
@@ -176,13 +180,123 @@ svg.laptop{
 	left: 58%;
 	z-index: 0;
 }
+
+/* COMPANY DETAILS CARD */
+.company-details-grid { 
+	padding-top: 5rem;	
+	padding-bottom: 3rem;
+	width: 100%;
+	height: 500px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;	
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	margin-bottom: 2rem;
+	
+}
+/* CARDS */
+.card{ 
+	padding: 2rem;
+	display: grid;
+	gap: 1rem;
+	background-color: var(--extra-light);
+	border-radius:5px ;
+	box-shadow: 0px 6px 8px -6px rgba(0,0,0,0.1);
+	cursor: pointer;
+	padding: 0 2rem 0 1.5rem;
+    border-left: 1px dashed rgba(95, 115, 128, .25);
+}
+.a2-card{ 
+	padding: 1rem;
+	display: grid;
+	gap: 1rem;
+	padding: 0 1rem 0 1rem;
+    
+}
+.card .heart-pulse1{
+	margin:1rem 0;
+}
+.card h1{
+	margin:1rem 0;
+	font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+}
+.card p{
+	margin:1rem 0;
+	font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+
+/* CONTAINERS */
+.whitegraybg { 
+	background-color:#f7f9fa;
+}
+.a1-container { 
+	padding-top: 1rem;	
+	width: 100%;
+	height: 300px;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: grid;	
+	grid-template-columns: repeat(2, 1fr);
+}
+.a2-container { 
+	padding-top: 1rem;	
+	width: 100%;
+	height: 100px;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: grid;	
+	grid-template-columns: repeat(3, 1fr);
+}
+.white-container { 
+	background-color: ;
+	padding-top: 1rem;	
+	width: 100%;
+	height: 100px;
+	max-width: 1000px;
+	margin: 0 auto;
+
+
+}
+
+/* SERVICES */
+.services-text { 
+
+	gap: 1rem;
+	padding-right: 1rem;
+}
+
+.services-text h1{
+	margin:1rem 0;
+	font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+}
+
+.services-text p{
+	margin:1rem 0;
+	font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
 /* RESPONSIVE DESIGN */
 @media(max-width:992px){
 	.navbar .links,
 	.navbar .action_btn{
 		display: none;
 	}
-
-	
 }
 
+/* WHAT WE DO */
+#whatwedo { 
+	 
+}
