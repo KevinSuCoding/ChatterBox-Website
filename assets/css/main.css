@@ -78,9 +78,9 @@ header{
 }
 /* HERO BANNER */
 .hero {
-	height: 600px;
-	/* background-color: #151e3d; */
-	
+	height: 480px;
+	background-color: #151e3d;
+	z-index: -2;
 }
 .hero-container { 
 	width: 100%;
@@ -92,19 +92,22 @@ header{
 }
 .hero-text-wrapper {
 	padding-left: 6rem;
-	padding-top: 5rem;
+	padding-top: 3rem;
 	padding-bottom: 5rem;
 	z-index: 1;
 }
 .hero-text-wrapper h1{
 	font-size: medium;
+	color: white;
 }
 .hero-text-wrapper h2{
 	font-size: 5rem;
+	color: white;
 
 }
 .hero-text-wrapper p{
 	font-size: medium;
+	color: white;
 }
 
 /* CLIENT QUOTE BUTTON */
@@ -124,17 +127,17 @@ header{
     border-radius: .25rem;
     background-color: blue;
     color: white;
-    box-shadow: 0px 8px 9px -6px rgba(95, 115, 128, .44);
+    
     transition: transform 300ms ease 0ms, box-shadow 300ms ease 0ms;
 }
 .hero-quote-link:hover{
 	color: skyblue;
 }
-/* IMAGE HALF FACE GUY */
+/* HERO IMAGE */
 .hero-image-wrapper {
 	display: flex;
 	position: absolute;
-	top: 135px;
+	top: 105px;
 	left: 52%;
 
 }
@@ -143,7 +146,7 @@ header{
 	position: relative;
 	right: 200px;
 	bottom: 50px;
-	z-index: -1;
+	z-index: 0;
 }
 
 .text-wrapper p { 
@@ -156,7 +159,7 @@ header{
 	padding-top: 1.5rem;	
 	padding-bottom: 3rem;
 	width: 100%;
-	height: 500px;
+	height: 450px;
 	max-width: 1200px;
 	margin: 0 auto;
 	display: grid;	
@@ -192,12 +195,14 @@ header{
 	font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 600;
+
 }
 .card p{
 	margin:1rem 0;
 	font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
+	text-align: justify;
 }
 
 
@@ -233,7 +238,7 @@ header{
 #whoweare{ 
 	padding-top: 1rem;	
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	max-width: 1000px;
 	margin: 0 auto;
 	display: grid;	
@@ -246,6 +251,7 @@ header{
 }
 #whoweare p{ 
 	text-align: justify;
+	text-indent: 2rem;
 }
 /* value what matters*/
 .a2-container h2{
@@ -262,6 +268,31 @@ header{
 	padding-left: 3rem;
 	font-size: 30px;
 }
+.apply-wrapper{ 
+	text-align: right;
+	padding-top: 1rem;
+}
+.apply-btn{
+	background-color: blue;
+	color: whitesmoke;
+	padding: 0.5rem 1rem ;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	font-size: 0.9rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: scale 0.2 ease;
+	
+}
+.apply-btn:hover{
+	color: lightblue;
+
+}
+.apply-btn:active{
+	scale:0.95;
+}
+
 .services-text {
 	gap: 1rem;
 	padding-right: 1rem;
