@@ -5,6 +5,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body>
@@ -44,7 +46,7 @@
 		
 		<!-- WHO WE ARE BANNER -->
 		<section id="whoweare">
-			<h2>Who We Are</h2>
+			<h2><span style="color: #222222; font-weight: 400;">Who</span> We Are</h2>
 			<p>At ChatterBox, our business is helping your business succeed. We intend to ensure that we build a
 				business structure that has committed; professional and highly dedicated employees to allow us
 				to attain our goals and objectives. We will also ensure that we get the right equipment that will allow
@@ -105,42 +107,82 @@
 		
 		<!-- WHAT WE DO IN CHATTERBOX -->
 		<section id="whatwedo" class="a2-container">
-			<h2>How we make it possible with what we do</h2>
+			<h2>"Think Business, Think ChatterBox"</h2>
+			<p>We are the voice of the business we represent.</p>
 		</section>
 		<!-- SERVICES OF CB -->
-		<section>
+		
 			<div class="whitegraybg">
-				<div class="a1-container">
+				<div class="a3-container">
 					<div class="services-text">
-						<h1>lorem itsum potek ka lorem itsum potek ka</h1>
-						<p>&nbsp;</p>
-						<p>lorem itsum potek ka lorem itsum potek ka lorem itsum potek ka lorem 
-							itsum potek ka lorem itsum potek ka lorem itsum potek ka lorem itsum
-							 potek ka lorem itsum potek ka lorem itsum potek ka lorem itsum potek ka</p>
+						<h1>Excellent service. </h1>
+						<h1>Results delivered with quality.</h1>
+						<p>
+							Drawing from a rich heritage in BPO excellence, We are a 
+							premier provider of customized solutions spanning lead generation, 
+							customer service, and appointment setting. With years of industry
+							 expertise, we empower businesses to excel in today's dynamic market. Leveraging cutting-edge technology and a dedicated workforce, we drive growth and success for our clients across diverse sectors.
+						</p>
+						<p>
+							At <span style="color:#1c05b3 ; font-weight: bold;">ChatterBox</span>, we understand the evolving needs of modern businesses
+							 and are committed to delivering exceptional service and tangible 
+							 results. Our comprehensive suite of services, combined with our 
+							 unwavering focus on innovation, enables us to support our clients
+							  in achieving their goals and surpassing expectations.
+						</p>
+						</div>
+					<div class="services-wrapper">
+						<img src="handshake.svg" alt="" class="img-handshake">
 					</div>
-					<div class="services-text">
-						<h1>lorem itsum potek ka lorem itsum potek ka</h1>
-						<p>&nbsp;</p>
-						<p>lorem itsum potek ka lorem itsum potek ka lorem itsum potek ka lorem 
-							itsum potek ka lorem itsum potek ka lorem itsum potek ka lorem itsum
-							 potek ka lorem itsum potek ka lorem itsum potek ka lorem itsum potek ka</p>
-					</div>
+					
 				</div>
-				<div class="a1-container">
-					<div class="services-text">
-						<h1>lorem itsum potek ka lorem itsum potek ka</h1>
-						<p>&nbsp;</p>
-						<p>lorem itsum potek ka lorem itsum potek ka lorem itsum potek ka lorem 
-							itsum potek ka lorem itsum potek ka lorem itsum potek ka lorem itsum
-							 potek ka lorem itsum potek ka lorem itsum potek ka lorem itsum potek ka</p>
-					</div>
-					<div class="services-text">
-						<h1>lorem itsum potek ka lorem itsum potek ka</h1>
-						<p>&nbsp;</p>
-						<p>lorem itsum potek ka lorem itsum potek ka lorem itsum potek ka lorem 
-							itsum potek ka lorem itsum potek ka lorem itsum potek ka lorem itsum
-							 potek ka lorem itsum potek ka lorem itsum potek ka lorem itsum potek ka</p>
-					</div>
+				<!-- <figure class="snip1533">
+					<figcaption>
+					  <blockquote>
+						<img src="images/pic01.jpg" alt="">
+						<p>If you do the job badly enough, sometimes 
+							you don't get asked to do it again.</p>
+					  </blockquote>
+					  <h3>Wisteria Ravenclaw</h3>
+					  <h4>Google Inc.</h4>
+					</figcaption>
+				</figure> -->
+				
+			</div>
+		<section class="testimonial">
+			<h2>Agent Testimonials</h2>
+			<div class="testimonial-container">
+				<div class="testimonial-column">
+					
+					  
+					 
+				</div>
+				<div class="testimonial-column">
+					<figure class="snip1533">
+						<figcaption>
+						  <blockquote>
+							<img src="images/pic01.jpg" alt="">
+							<p>If you do the job badly enough, sometimes 
+								you don't get asked to do it again.</p>
+						  </blockquote>
+						  <h3>Wisteria Ravenclaw</h3>
+						  <h4>Google Inc.</h4>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="testimonial-column">
+					<figure class="snip1533">
+						<figcaption>
+						  <blockquote>
+							<img src="images/pic01.jpg" alt="">
+							<p>If you do the job badly enough, sometimes 
+								you don't get asked to do it again.</p>
+						  </blockquote>
+						  <h3>Wisteria Ravenclaw</h3>
+						  <h4>Google Inc.</h4>
+						</figcaption>
+					</figure>
+					
 				</div>
 			</div>
 		</section>
@@ -158,7 +200,38 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="jquery.min.js"></script>
+			<script src="owlcarousel/owl.carousel.min.js"></script>
+			<script>
+				$('.owl-carousel');
+				owl.owlCarousel({
+					loop:true,
+					nav:true,
+					margin:10,
+					responsive:{
+						0:{
+							items:1
+						},
+						600:{
+							items:3
+						},            
+						960:{
+							items:5
+						},
+						1200:{
+							items:6
+						}
+					}
+				});
+				owl.on('mousewheel', '.owl-stage', function (e) {
+					if (e.deltaY>0) {
+						owl.trigger('next.owl');
+					} else {
+						owl.trigger('prev.owl');
+					}
+					e.preventDefault();
+				});
+			</script>	
 	</body>
 </html>
 
